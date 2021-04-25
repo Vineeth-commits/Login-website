@@ -6,13 +6,14 @@
     <meta name="description" content="A sign up page">
     <link rel="stylesheet" href="style.css">
     <title>Sign up</title>
+    <script src="PassReq.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="form-main">
             <h1>Sign up</h1>
             <p>Take a second to fill up</p>
-            <form action="/Underconstruction.html">
+            <form action="/Underconstruction.html" onsubmit="return passwordVerification()">
             <div class="form-details">
                 <label for="first name">First Name</label>
                 <input type="text" name="first-name" id="">
@@ -27,11 +28,11 @@
             </div>
             <div class="form-details">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="">
+                <input type="password" name="password" id="passwd">
             </div>
             <div class="form-details">
                 <label for="password-confirm">Confirm Password</label>
-                <input type="password" name="password-confirm" id="">
+                <input type="password" name="password-confirm" id="confirm">
             </div>
             <button type="submit" class="btn">Sign up</button>
             <p class="bottom-text">By clicking the Sign Up button, you agree to our
